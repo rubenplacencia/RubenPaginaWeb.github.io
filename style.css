@@ -1,0 +1,256 @@
+.imagenFondo{
+
+    background-image: url(Imagenes/fotofondopantallas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 335px;
+    background-attachment: fixed;
+
+
+}
+
+
+.aVer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombreInformacion{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-left: 100px;
+    background-color: white;
+}
+
+.nombrePrimero{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.letrasImagenes{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.divImagenes {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px; /* Ajusta el margen según sea necesario */
+}
+
+.segundoContenedor{
+    background-color: #21293d;
+    height: 200px;
+    color: white;
+    
+}
+
+.letrasIdiomas{
+    color: #eb6867;
+    font-size: 2em;
+    padding-left: 30px;
+}
+.TercerContenedor{
+    background-image:url(Imagenes/fb02a095fd60d499583a0e24f9b33cfc.jpg);
+    background-size: cover;
+    height: 400px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+.contenedorDifuminado{
+    background-color: #21293de1;
+    height: 300px;
+}
+.circulosEscuela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 75, 74);
+    border-radius: 50%; /* Se cambia a 50% para que sea un círculo perfecto */
+    width: 75px;
+    height: 75px;
+    color: white;
+    font-size: 40px;
+    box-shadow: 2px 4px  rgba(0, 0, 0, 0.256);
+}
+.divCirculos{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineaEscuela{
+    height: 2px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(229, 75, 74);
+}
+
+.cuartoContenedor{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.estudiosDiv{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fechaEscuela{
+    font-weight: bold;
+    
+}
+.encabezadoEducacion{
+    font-size: 36px; 
+    font-weight: bold;
+}
+.quintoDiv{
+    background-color: #21293d;
+    display: flex;
+    flex-direction: column;
+}
+.encabezadoExp{
+    text-align: center;
+}
+.infoExp{
+    display:flex;
+    width: 90%;
+    
+
+}
+.divGonher{
+    color: rgb(229, 75, 74);
+    width: 20%;
+    height: 75px;
+}
+
+.divTrabajoText{
+    color:white;
+    font-size: 12px;
+    width: 80%;
+    border-left: 1px solid rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 100px;
+
+}
+.divFinal{
+    background-color: white;
+   
+}
+.divComentario{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fraseRefere{
+    color: black;
+    font-size: 34px;;
+    width: 70%;
+    padding-bottom: 40px;
+}
+
+.contenedorFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
+}
+.contactDiv{
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.circulosSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 75, 74);
+    border-radius: 50%; /* Se cambia a 50% para que sea un círculo perfecto */
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 4px  rgba(0, 0, 0, 0.256);
+}
+
+.circulosSocial:hover{
+    background-color: rgb(228, 92, 92);
+}
+
+.nameProyect{
+    color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    background-image: linear-gradient(
+         to right, rgb(47, 58, 87), white) ;
+    
+}
+.nameProyect2{
+    color: white;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+         to right, rgb(204, 10, 10), white) ;
+    
+}
+.contProyect{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.btnDescarga{
+    background-color: rgb(33, 41, 61);
+    color: white;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: rgb(158, 158, 158);
+    border-radius: 10px;
+}
+.btnDescarga:hover{
+    background-color: rgb(47, 58, 87);
+}
+
+.parrafPro{
+    font-size: 19px; 
+    border-left: 10px; 
+    border-color: black;
+}
+
+.imgProyect1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*//////////////////////////////////////////MEDIAS QUERYS*/
+
+
+@media screen and (min-width: 480px){
+
+.nombreInformacion2{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+}

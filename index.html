@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Ruben Placencia</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <div id="app" >
+            <div class="sticky-top bg-light">
+            <div class="d-flex col-12 justify-content-end sticky-top">
+                    <nav class="d-flex">
+                        <div class="mx-5 my-4"><button @click="ventanas('sobreMi')">Sobre mi</button></div>
+                        <div class="mx-5 my-4"><button @click="ventanas('Proyectos')">Proyectos</button></div>
+                        <div class="mx-5 my-4"><button>Psicologia</button></div>
+                        <div class="mx-5 my-4"> <button @click="saludar">Saludar</button>
+                    </nav>    
+            </div>
+        </div>
+            <div v-if="abrirVentana == 'sobreMi'">
+                <div class="imagenFondo">
+                </div>
+                <a name="sobreMi"></a>
+                <div class="d-flex nombreInformacion">
+                    
+                    <div class="text-start">
+                        <p class="nombrePrimero">Ruben Placencia </p>
+                        <p style="font-size: 24px; font-family: Montserrat;">Soy Rubén Placencia, soy un programador recién egresado de la carrera informática administrativa. Estoy buscando nuevas oportunidades en mi carrera y estoy listo para desafiarme a mí mismo. Tengo una gran pasión por mi carrera; lo que más me gusta es la forma en que puedo llegar a trabajar en equipo y todos pueden contribuir con cosas nuevas, descubrir nuevas tecnologías y su entorno. Me gusta actuar un poco fuera de lo común y agregar un poco de mi estilo a cada cosa que hago. La capacidad de crear y analizar es lo que me define.
+                        </p>
+                    </div>
+                    <div class="mx-5">
+                        <div class="d-flex">
+                            <div class="divImagenes">
+                                <img src="Imagenes/lapiz.png" style="width: 100px; height: 100px; ">
+                                <p class="letrasImagenes">Administracion</p>
+                            </div>
+                            <div class="divImagenes">
+                                <img src="Imagenes/backend.png" style="width: 100px; height: 100px; ">
+                                <p class="letrasImagenes">Programacion</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="divImagenes">
+                                <img src="Imagenes/buscar.png" style="width: 100px; height: 100px; ">
+                                <p class="letrasImagenes">Investigacion</p>
+                            </div>
+                            <div class="divImagenes">
+                                <img src="Imagenes/apoyo-tecnico.png" style="width: 100px; height: 100px; ">
+                                <p class="letrasImagenes">Mantenimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" segundoContenedor">
+                    <div class="d-flex col-12">
+                        <div class="d-flex col-12 ">
+                            <div class="container pt-5">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="d-flex ps-5 col-4 pb-5">
+                                        <div>
+                                            <img src="Imagenes/idiomas.png" style="height: 100px;">
+                                        </div>
+                                        <div>
+                                            <div class="letrasIdiomas ">Ingles</div>
+                                            <div style="font-size: 2em; padding-left: 30px;">29%</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ps-5 col-4 pb-5">
+                                        <div>
+                                            <img src="Imagenes/idiomas.png" style="height: 100px;">
+                                        </div>
+                                        <div>
+                                            <div class="letrasIdiomas">Frances</div>
+                                            <div style="font-size: 2em; padding-left: 30px;">5%</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ps-5 col-4 pb-5">
+                                        <div>
+                                            <img src="Imagenes/idiomas.png" style="height: 100px;">
+                                        </div>
+                                        <div>
+                                            <div class="letrasIdiomas">Aleman</div>
+                                            <div style="font-size: 2em; padding-left: 30px;">5%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a name="Educacion"></a>
+                <div class="cuartoContenedor ">
+                    <div class="encabezadoEducacion mb-5">Educacion</div>
+                    <div  class="estudiosDiv">
+                        <div class="divCirculos">
+                            <div class="circulosEscuela">
+                                <i class="bi bi-mortarboard-fill icon"></i>
+                            </div>
+                            <div class="lineaEscuela">
+                                    
+                            </div>
+                            <div class="fechaEscuela">Enero 2009 - julio del 2012</div>
+                            <div>Preparatoria Cbtis#22 Tec. Electronica</div>
+                        </div>
+                        <div class="divCirculos">
+                            <div class="circulosEscuela">
+                                <i class="bi bi-mortarboard-fill icon"></i>
+                            </div>
+                            <div class="lineaEscuela">
+                                    
+                            </div>
+                            <div class="fechaEscuela">Enero 2018 - trunca (6 semestre)</div>
+                            <div>UANL Facultad fisico matematicas</div>
+                        </div>
+                            <div class="divCirculos" >
+                                <div class="circulosEscuela">
+                                    <i class="bi bi-mortarboard-fill icon"></i>
+                                </div>
+                                <div class="lineaEscuela">
+                                    
+                                </div>
+                                <div class="fechaEscuela">Enero 2021 - Finaliza julio 2024</div>
+                                <div>Universidad ciudadana de nuevo leon </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="TercerContenedor">
+                        <div class="contenedorDifuminado text-center">
+                            <div class="encabezadoEducacion col-4 offset-4 fs-5 pt-5" style="color:rgba(255, 255, 255, 0.5);">
+                                -Hábitos atómicos
+                            </div>
+                            <div class="col-10 offset-1 fs-1">Elige el hábito correcto y verás que el progreso se da fácilmente. elige el hábito incorrecto y la vida se convertirá en una lucha constante  
+                        </div>
+                    </div>
+                    <a name="Experiencia"></a>
+                </div>
+                <div class="quintoDiv">
+                <div class="encabezadoExp col-4 offset-4 my-5">
+                    <span style="color:white; font-size: 36px; padding-top: 430px;">Experencia laboral</span>
+                </div>
+                    <div class="infoExp col-10 offset-2">
+                        <div class="divGonher">
+                            GONHE <br>
+                            2023-2024
+                        </div>
+                        <div class="divTrabajoText">En GONHER realice mis practicas profecionales, ahi estaba en el area de excelencia operativa y nosotros realizabamos aplicaciones web para la implementacion interna, donde desarrollamos una aplicacion de 5s, sugerencias y en proceso de opex trancking system</div>
+                    </div>
+                    <div class="infoExp col-10 offset-2">
+                        <div class="divGonher">GONHER</div>
+                        <div class="divTrabajoText">En GONHER realice mis practicas profecionales, ahi estaba en el area de excelencia operativa y nosotros realizabamos aplicaciones web para la implementacion interna, donde desarrollamos una aplicacion de 5s, sugerencias y en proceso de opex trancking system</div>
+                    </div>
+                    <div class="infoExp col-10 offset-2 mb-5">
+                        <div class="divGonher">GONHER</div>
+                        <div class="divTrabajoText">En GONHER realice mis practicas profecionales, ahi estaba en el area de excelencia operativa y nosotros realizabamos aplicaciones web para la implementacion interna, donde desarrollamos una aplicacion de 5s, sugerencias y en proceso de opex trancking system</div>
+                    </div>
+                </div>
+
+                <div class="divFinal">
+                    <div class="divComentario">
+                        <div class="py-5">NOMBRE DEL COMENTARIO</div>
+                        <div class="fraseRefere"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nisi reprehenderit tempore labore sapiente ullam at, omnis, unde dignissimos praesentium laborum cupiditate, dolor ducimus perferendis repellendus eius a. Officia, placeat!</p></diV>
+                    </div>
+                </div>
+        </div>
+
+        <!--///////////INICIA EL APARTADO DE PROYECTOS //////////////////////////////////////////////////////////////////////////-->
+            <div v-if="abrirVentana === 'Proyectos'">
+                <div class="contProyect">
+                    <h2 class="nameProyect">Proyecto personal</h2>
+                    <div class="d-flex">
+                        <p class="parrafPro px-5 pt-5" >Este proyecto lo fui creando a la par de mi materia de paginas web para poder ir practicando lo que el maestro nos eneseñaba
+                            practicamente copie mi cv de practicante y lo diseñe todo en una pagina web con HTML y CSS, bootstrap, practicamentr utilice div's,
+                            parrafos, traje una imagen y quite los bordes, fue un proyecto pequeño pero me ayudo mucho para saber como funcionaban los div's,
+                            como utilizar css para darle estilo a las cosas y bootstrap lo utilizo normalmente para cosas mas pequeñas y rapidas como margenes
+                            posiciones de display y algunos diseños definidos, tambien en que etiquetas utilizar en que momento, lo disfrute mucho por que no 
+                            sabia nada sobre maquetado de paginas web
+                        </p>
+                        <div class="imgProyect1">
+                            <img src="Imagenes/cvproyecto.png" style="height: 350px;" class="mx-5 pt-5">
+                        </div>
+                    </div>
+                </div>
+                <div class="contProyect mt-5">
+                    <h2 class="nameProyect2">Sistemas de Excelencia operativa (GONHER)</h2>
+                    <div class="d-flex">
+                        <div>
+                            <p class="parrafPro px-5 pt-5" >En GONHER realice diferentes proyectos junto con el equipo de excelencia operativa, realizamos la plataforma de 
+                                sugerencias, en donde los colaboladores podia subir las sugerencias que podian ayudar a mejorar la productividad, la seguridad, opiniones 
+                                puntos de vista y evaluaciones de sus jefes, al realizar una sugerencia los analistas revisavan que tan factible era y despues se le daban puntos
+                                que ellos podian acumular y cangear por productos de la lista 
+                            </p>
+                            <ul class="px-5">
+                                <li>Utilizamos MySQL para administrar la base de datos</li>
+                                <li>VUE para la maquetacion de la pagina y su funcionalidad </li>
+                                <li>PHP para el backend</li>
+                            </ul>
+                        </div>
+                        <img id="imagen" src="Imagenes/imagen1.jpg" style="height: 50px;">
+                        <button @click="cambioImagen"> cambiar</button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+              <div style="background-color: #21293d; text-align: center;" >
+                <spam style="color:white; font-size: 38px;">Contacto</spam>
+                <div class="contenedorFooter col-12 mt-5" >    
+                    <div>
+                        <div style="color: white; margin-bottom: 10px;;"> Social media </div>
+                        <div class="d-flex">
+                        <div class="circulosSocial mx-2">
+                            <a style="color: white;" href="https://github.com/rubenplacencia">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                        <div class="circulosSocial mx-2">
+                            <a style="color: white;" href="https://wa.me/8115271984"> 
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="circulosSocial mx-2">
+                            <a style="color: white;" href="https://www.linkedin.com/in/ruben-antonio-placencia-rivera-52210725a/">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="contactDiv" > 
+                        <div> Telefono <br>
+                            8115271984
+                        </div>
+                    </div>
+                    <div class="contactDiv" > 
+                        <div> Correo <br>
+                            ruben_placencia09@hotmail.com
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <a style="color: white;" class="mx-3" href="#sobreMi">Sobre mi</a>
+                    <a style="color: white;" class="mx-3" href="#Educacion">Educacion</a>
+                    <a style="color: white;" class="mx-3" href="#Experiencia">Experencia</a>
+                </div>  
+                </div>
+            </footer>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="rubenWeb.js"></script>
+    </body>
+</HTML>
