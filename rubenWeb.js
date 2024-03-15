@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-             abrirVentana: '',
+             abrirVentana: 'sobreMi',
              imagenes: [
                 'imagen1.jpg',
                 'imagen2.jpg',
