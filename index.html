@@ -4,7 +4,6 @@
         <title>Ruben Placencia</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
@@ -15,7 +14,7 @@
                         <div class="mx-5 my-4"><button @click="ventanas('sobreMi')">Sobre mi</button></div>
                         <div class="mx-5 my-4"><button @click="ventanas('Proyectos')">Proyectos</button></div>
                         <div class="mx-5 my-4"><button>Psicologia</button></div>
-                        <div class="mx-5 my-4"> <button @click="saludar">Saludar</button>
+                        <div class="mx-5 my-4"> <button>Saludar</button>
                     </nav>    
             </div>
         </div>
@@ -131,14 +130,16 @@
                             <div class="encabezadoEducacion col-4 offset-4 fs-5 pt-5" style="color:rgba(255, 255, 255, 0.5);">
                                 -Hábitos atómicos
                             </div>
-                            <div class="col-10 offset-1 fs-1">Elige el hábito correcto y verás que el progreso se da fácilmente. elige el hábito incorrecto y la vida se convertirá en una lucha constante  
+                            <button @click="cambiarFrase">puchale</button>
+                            <div class="col-10 offset-1 fs-1" id="frasesLibros1"> 
+                                “La formación de hábitos es un proceso mediante el cual una conducta se vuelve progresivamente automática mediante la repetición constante“ 
                         </div>
                     </div>
                     <a name="Experiencia"></a>
                 </div>
                 <div class="quintoDiv">
                 <div class="encabezadoExp col-4 offset-4 my-5">
-                    <span style="color:white; font-size: 36px; padding-top: 430px;">Experencia laboral</span>
+                    <!-- <spam style="color:white; font-size: 36px; padding-top: 430px;">Experencia laboral</spam> -->
                 </div>
                     <div class="infoExp col-10 offset-2">
                         <div class="divGonher">
@@ -177,9 +178,6 @@
                             posiciones de display y algunos diseños definidos, tambien en que etiquetas utilizar en que momento, lo disfrute mucho por que no 
                             sabia nada sobre maquetado de paginas web
                         </p>
-                        <div class="imgProyect1">
-                            <img src="Imagenes/cvproyecto.png" style="height: 350px;" class="mx-5 pt-5">
-                        </div>
                     </div>
                 </div>
                 <div class="contProyect mt-5">
@@ -197,14 +195,12 @@
                                 <li>PHP para el backend</li>
                             </ul>
                         </div>
-                        <img id="imagen" src="Imagenes/imagen1.jpg" style="height: 50px;">
-                        <button @click="cambioImagen"> cambiar</button>
                     </div>
                 </div>
             </div>
             <footer>
               <div style="background-color: #21293d; text-align: center;" >
-                <spam style="color:white; font-size: 38px;">Contacto</spam>
+                <p style="color:white; font-size: 38px;">Contacto</p>
                 <div class="contenedorFooter col-12 mt-5" >    
                     <div>
                         <div style="color: white; margin-bottom: 10px;;"> Social media </div>
@@ -246,6 +242,7 @@
             </footer>
 
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="rubenWeb.js"></script>
     </body>
 </HTML>
