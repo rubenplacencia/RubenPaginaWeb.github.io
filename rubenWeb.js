@@ -20,7 +20,9 @@ const app = Vue.createApp({
     },
     mounted(){
         this.frasesDiv = document.getElementById('frasesLibros1');
-        setInterval(this.cambiarFrase, 5000)
+        setInterval(this.cambiarFrase, 5000);
+       
+
     },
     methods: {
            
